@@ -217,7 +217,7 @@ ENDUSAGE
 						end
 					end
 				end
-				dItems = d.collect + toAdd
+				dItems = d.collect.to_a + toAdd
 				d.close
 				d = toAdd = nil
 				dItems.sort! #aws says we will get alpha sorted results but ruby doesn't
